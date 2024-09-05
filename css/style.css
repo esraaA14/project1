@@ -6,7 +6,6 @@
 body {
     height: 6000px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 header {
     font-family: Arial, sans-serif;
@@ -73,11 +72,10 @@ header {
 }
 .dropdown {
     position: relative;
-    display: inline-block;
-}
+    display: inline-block;}
 .dropdown-content {
     margin-top: 13px;
-
+    margin-left: -60px;
     display: none;
     position: absolute;
     background-color: rgb(185, 120, 121);
@@ -87,8 +85,7 @@ header {
     text-align: center;
 }
 .dropdown:hover .dropdown-content {
-    display: block;
-}
+    display: block;}
  .div1 {
      width:  100%;
      height: 100vh ;
@@ -126,7 +123,7 @@ header {
     cursor: pointer;
  }
  .btn2 {
-    background-color: rgb(164, 102, 103);
+    background-color: rgb(185, 120, 121);
     color: #fff;
     margin-left: 10px;
  }
@@ -167,7 +164,6 @@ header {
     font-size: 35px;
     margin-bottom: 20px;
     color: #c16666}
-
 .feature h3 {
     font-size: 25px;
     margin-bottom: 10px;
@@ -249,14 +245,14 @@ h1::after {
 }
 .gallery-item {
     position: relative;
-    width: 340px; 
+    width: 320px; 
     height: 310px;
     background-color: #f7f7f7; 
     transition: transform 0.2s;
     margin-bottom: 30px; 
 }
 .gallery-item img {
-    width: 75%; 
+    width: 100%; 
     height: 310px; 
     display: block;
     margin: 0 auto; 
@@ -268,14 +264,15 @@ h1::after {
     left: -7px;  
     right: -7px; 
     bottom: -7px;
-    background-color: rgba(129, 60, 60, 0.349); 
+    background-color: rgba(199, 127, 127, 0.416);
     opacity: 0; 
-    transition: opacity 0.3s; 
+    transition: opacity 0.3s, background-color 0s; 
 }
 .gallery-item:hover::after {
     opacity: 1; 
     transform: scale(1.07); 
-    visibility: visible; 
+    background-color: rgba(138, 94, 94, 0.596);
+    transition: opacity 0.3s, background-color 1.5s; 
 }
 .overlay11 {
     position: absolute;
@@ -283,14 +280,14 @@ h1::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    z-index: 1;
 }
 .gallery-item:hover .overlay11 {
     opacity: 1;
@@ -318,10 +315,10 @@ h1::after {
 .category {
     font-size: 18px;
     margin-bottom: 5px;
-    color: #cb6271;
+    color: #c70303;
 }
 .overlay11 .title {
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 .overlay11 .icons {
@@ -329,7 +326,7 @@ h1::after {
     gap: 10px;
 }
 .overlay11 .icons i {
-    font-size: 20px;
+    font-size: 30px;
     background: #fff;
     color: #cb6271;
     padding: 5px;
@@ -424,36 +421,26 @@ h1::after {
     visibility: visible;
 }
 .service-box h3{
- 
     position: relative; 
     z-index: 1; 
     transition: color 0.2s; 
 }
 .service-box:hover h3{
- 
     color: #f8f6f7; 
 }
 .service-box p{
- 
     position: relative; 
     z-index: 1; 
     transition: color 0.2s; 
 }
 .service-box:hover p{
- 
-    color: #383336; 
-}
+    color: #383336; }
 .service-box .icon-and-title {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     position: relative; 
     z-index: 1;
-}
-.icon {
-    font-size: 35px;
-    color: #b7165e;
-    margin-right: 30px;
 }
 .service-box h3 {
     font-size: 27px;
@@ -518,14 +505,14 @@ h1::after {
     margin-left: 150px;
 }
 .image-section {
-    width: 500px; 
+    width: 400px; 
     height: 380px;
     background-color: #f7f7f7; 
-    margin-bottom:30px;
-    margin-left: 50px;
+    margin-bottom:5px;
+    margin-left: 90px;
 }
 .image-section img {
-    width: 75%; 
+    width: 100%; 
     height: 100%; 
     display: block;
     margin: 0 auto;
@@ -609,6 +596,7 @@ h1::after {
     gap: 60px; 
 }
 .pricing-container h1 {
+    color: #000;
     font-size: 40px;  
     margin-bottom: 40px;
     margin-top: 70px;
@@ -654,7 +642,7 @@ h1::after {
 }
 .pricing-plan:hover span,.pricing-plan:hover small {
     color: rgb(138, 9, 9); 
-    transition-delay: 0.5s;
+    transition-delay: 0.4s;
 }
 .price {
     font-size: 25px;
@@ -901,7 +889,7 @@ ul li {
     padding: 0;
     display: flex;
     justify-content:center;
-    gap: 10px;
+    gap: 15px;
     background-color: rgba(218, 131, 134, 0.183);
     width: 1300px;
     margin-left: 70px;
@@ -950,7 +938,7 @@ ul li {
 }
   .news-card img ,.news-card0 img{
     width: 70%;
-    height: 279px;
+    height: 280px;
     margin-right: 90px; 
     margin-top: -20px; 
 }
@@ -1013,7 +1001,7 @@ ul li {
 }
 .social-icons a {
     color: #fefefe;
-    background-color: #f16c6c;
+    background-color: rgb(210, 121, 121);
     font-size: 20px;
     width: 55px;
     height: 55px;
@@ -1027,7 +1015,7 @@ ul li {
     transition: background-color 0.3s, transform 0.3s;
 }
 .social-icons a:hover {
-    background-color: #af4343;
+    background-color: #c15757;
     text-decoration: none;
 }
 .copyright {
